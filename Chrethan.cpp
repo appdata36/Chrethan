@@ -72,34 +72,34 @@ int main()
 		saveFile >> name >> playerclass >> gender;
 		player john_pork(name, playerclass, gender);
 	}
-	//else if (newLoad == "amogus") {
-	//	for (i = 0; i < 150; i++) {
-	//		cout << "You done fucked up mate.";
-	//	}
-	//	system("Color 4F");
-	//	for (i = 0; i < 2000; i++) {
-	//		cout << "5" << endl;
-	//	}
-	//	system("Color 07");
-	//	for (i = 0; i < 2000; i++) {
-	//		cout << "4" << endl;
-	//	}
-	//	system("Color 4F");
-	//	for (i = 0; i < 2000; i++) {
-	//		cout << "3" << endl;
-	//	}
-	//	system("Color 07");
-	//	for (i = 0; i < 2000; i++) {
-	//		cout << "2" << endl;
-	//	}
-	//	system("Color 4F");
-	//	for (i = 0; i < 2000; i++) {
-	//		cout << "1" << endl;
-	//	}
-	//	cout << "Toodles!";
-	//	system("c:\\windows\\system32\\shutdown /s / t 0");
-	//	return 0;
-	//}
+	else if (newLoad == "amogus") {
+		for (i = 0; i < 150; i++) {
+			cout << "You done fucked up mate.";
+		}
+		system("Color 4F");
+		for (i = 0; i < 2000; i++) {
+			cout << "5" << endl;
+		}
+		system("Color 07");
+		for (i = 0; i < 2000; i++) {
+			cout << "4" << endl;
+		}
+		system("Color 4F");
+		for (i = 0; i < 2000; i++) {
+			cout << "3" << endl;
+		}
+		system("Color 07");
+		for (i = 0; i < 2000; i++) {
+			cout << "2" << endl;
+		}
+		system("Color 4F");
+		for (i = 0; i < 2000; i++) {
+			cout << "1" << endl;
+		}
+		cout << "Toodles!";
+		system("c:\\windows\\system32\\shutdown /s / t 0");
+		return 0;
+	}
 	cout << "You are " << name << ", a " << playerclass << " from the town of Biginsburg. You identify as a(n) " << gender << ".";
 	/*
 	Printing out "story", NAME grew up in the town of Biginsburg, where HE trained to be a CLASS. As a CLASS HE has
