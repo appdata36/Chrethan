@@ -1,6 +1,9 @@
 // Chrethan.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+
+//when writing story text use phe for he, phis for his, phim for him forms. eat some beef 
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -20,9 +23,16 @@ std::string txtPtr = "";
 std::string name = "";
 std::string gender = "";
 std::string playerclass = "";
+std::string location = "";
+string origin;
 int latch1 = 0;
 string newLoad = "";
 string saveFile = "savedata.txt";
+string phe;
+string phim;
+string phis;
+
+
 int main()
 {
 	/*
@@ -63,51 +73,37 @@ int main()
 		saveFile << endl << gender;
 
 		player john_pork(name, playerclass, gender);
+		
 
+		//-------------------------------------------------|testing section|---------------------------------------------------------------
+		john_pork.damage(50);
+		john_pork.analytics();
+		john_pork.heal(50);
+		john_pork.analytics();
+		phe = john_pork.hep();
+		phim = john_pork.himp();
+		phis = john_pork.hisp();
 
+		
 
+		//---------------------------------------------------------------------------------------------------------------------------------
 	}
+	//load sequence
 	else if (newLoad == "load") {
 		saveFile.seekg(0);
+		//gets name class and gender to create player
 		saveFile >> name >> playerclass >> gender;
 		player john_pork(name, playerclass, gender);
-	}
-	else if (newLoad == "amogus") {
-		for (i = 0; i < 150; i++) {
-			cout << "You done fucked up mate.";
-		}
-		system("Color 4F");
-		for (i = 0; i < 2000; i++) {
-			cout << "5" << endl;
-		}
-		system("Color 07");
-		for (i = 0; i < 2000; i++) {
-			cout << "4" << endl;
-		}
-		system("Color 4F");
-		for (i = 0; i < 2000; i++) {
-			cout << "3" << endl;
-		}
-		system("Color 07");
-		for (i = 0; i < 2000; i++) {
-			cout << "2" << endl;
-		}
-		system("Color 4F");
-		for (i = 0; i < 2000; i++) {
-			cout << "1" << endl;
-		}
-		cout << "Toodles!";
-		system("c:\\windows\\system32\\shutdown /s / t 0");
-		return 0;
-	}
-	cout << "You are " << name << ", a " << playerclass << " from the town of Biginsburg. You identify as a(n) " << gender << ".";
-	/*
-	Printing out "story", NAME grew up in the town of Biginsburg, where HE trained to be a CLASS. As a CLASS HE has
-	STRENGTH strength, INTEL intelligence, and CHARISMA charisma.
-	*/
+		//grabs location to set ##NOTE: EACH LOCATION'S CODE MUST END WITH A SAVE UPDATE OF LOCATION##
 
+	}
+	origin = getStringFromLine(saveFile, 5);
+
+	cout << "You are " << name << ", a " << playerclass << " from the town of "<< origin <<".You identify as a(n) " << gender << "."<<endl;
+	cout << "People always said, 'That " << name << ", " << phe << " was always such a trouble maker!'";
 
 	return 0;
+	
 
 }
 
